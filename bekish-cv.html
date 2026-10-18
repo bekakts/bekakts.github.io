@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Бекжан Сайтмаматов — Flutter-разработчик. Резюме / Bekzhan Saitmamatov — Flutter Developer. Résumé.">
+<meta property="og:title" content="Bekzhan Saitmamatov — Flutter Developer">
+<meta property="og:description" content="Flutter-разработчик: iOS, Android, desktop, web. 3+ года опыта, 5 опубликованных приложений.">
+<meta property="og:type" content="profile">
+<style>img{max-width:100%}[hidden]{display:none!important}body{margin:0}
+@media print{body{background:#fff!important;padding:0!important}.bar{display:none!important}.paper{box-shadow:none!important;padding:0!important;max-width:none!important}a{color:inherit!important;text-decoration:none!important}.job,.proj,tr{break-inside:avoid}}
+</style>
+<title>Bekzhan Saitmamatov — Flutter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: a single A4-proportioned sheet of paper on a grey desk; one reading column; classic CV hierarchy.
+   Deliberately single-theme: a printed-document look reads the same on any host theme. */
+:root{
+  color-scheme:light;
+  --desk:#E6E8EC; --paper:#FFFFFF; --ink:#16191F; --ink-2:#3C434F; --muted:#6B7280;
+  --rule:#D5D9E0; --accent:#1B3A6B;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{background:var(--desk);color:var(--ink);font:16px/1.62 var(--sans);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:28px 56px;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--accent) 35%,transparent);text-underline-offset:2px}
+a:hover{text-decoration-color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.bar{max-width:880px;margin:0 auto 12px;display:flex;justify-content:flex-end}
+.lang{display:inline-flex;border:1px solid var(--rule);background:var(--paper);border-radius:6px;overflow:hidden}
+.lang button{all:unset;cursor:pointer;font:500 13px/1 var(--sans);padding:8px 14px;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+.paper{max-width:880px;margin:0 auto;background:var(--paper);box-shadow:0 1px 2px rgba(20,24,32,.06),0 8px 28px rgba(20,24,32,.08);
+  padding:64px 72px 56px}
+@media (max-width:700px){.paper{padding:36px 22px 32px}}
+
+/* header */
+.name{font:600 clamp(30px,5vw,40px)/1.1 var(--serif);letter-spacing:-.01em;margin:0}
+.title{font:500 18px/1.4 var(--sans);color:var(--accent);margin:8px 0 0}
+.contacts{display:flex;flex-wrap:wrap;gap:6px 22px;margin:18px 0 0;padding:16px 0 0;border-top:2px solid var(--ink);font-size:14.5px;color:var(--ink-2)}
+.contacts span b{font-weight:500;color:var(--muted);margin-right:6px}
+
+/* sections */
+section{margin-top:38px}
+h2{font:600 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 16px;padding-bottom:9px;border-bottom:1px solid var(--rule)}
+p{margin:0 0 12px;max-width:72ch}
+.lead{font-size:16.5px;color:var(--ink)}
+
+.comp{display:grid;grid-template-columns:1fr 1fr;gap:8px 36px;margin:0;padding:0;list-style:none}
+.comp li{position:relative;padding-left:16px}
+.comp li::before{content:"";position:absolute;left:0;top:.72em;width:6px;height:1.5px;background:var(--accent)}
+@media (max-width:640px){.comp{grid-template-columns:1fr}}
+
+/* jobs */
+.job{padding:4px 0 26px;margin-bottom:24px;border-bottom:1px solid var(--rule)}
+.job:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.job-head{display:flex;justify-content:space-between;align-items:baseline;gap:4px 20px;flex-wrap:wrap}
+.job h3{font:600 20px/1.3 var(--serif);margin:0}
+.dates{font-size:14.5px;color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap}
+.pos{font-weight:500;margin:2px 0 0}
+.ctx{color:var(--muted);font-size:14.5px;margin:2px 0 14px}
+h4{font:600 14px/1.3 var(--sans);color:var(--ink);margin:18px 0 8px}
+ul.b{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px;max-width:74ch}
+ul.b li::marker{color:var(--muted)}
+.proj{margin:14px 0 0;padding:14px 0 0;border-top:1px dashed var(--rule)}
+.proj-head{display:flex;justify-content:space-between;gap:4px 16px;flex-wrap:wrap;align-items:baseline}
+.proj-head strong{font-weight:600}
+.proj-head .links{font-size:14px}
+.proj p{margin:4px 0 0;color:var(--ink-2)}
+.tech{font-size:14.5px;color:var(--ink-2);margin-top:14px}
+.tech b{font-weight:600;color:var(--ink)}
+
+/* tables */
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 14px 10px 0;border-bottom:1px solid var(--rule)}
+th{font:600 12.5px/1.3 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1.5px solid var(--ink)}
+td:first-child{font-weight:600;white-space:nowrap;padding-right:22px}
+.skills td:first-child{width:28%;white-space:normal}
+tr:last-child td{border-bottom:0}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+@media (max-width:640px){.two{grid-template-columns:1fr}}
+.kv{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid var(--rule)}
+.kv:last-child{border-bottom:0}
+.kv span:last-child{color:var(--ink-2)}
+
+.foot{margin-top:40px;padding-top:14px;border-top:1px solid var(--rule);font-size:13px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="lang" role="group" aria-label="Language">
+    <button id="btn-ru" type="button" data-set="ru" aria-pressed="true">Русский</button>
+    <button id="btn-en" type="button" data-set="en" aria-pressed="false">English</button>
+  </div>
+</div>
+
+<!-- ======================= RUSSIAN ======================= -->
+<article class="paper" data-l="ru" lang="ru">
+  <header>
+    <h1 class="name">Бекжан Сайтмаматов</h1>
+    <p class="title">Flutter-разработчик · Mobile &amp; Cross-platform Engineer</p>
+    <div class="contacts">
+      <span><b>Город</b>Бишкек, Кыргызстан</span>
+      <span><b>Формат</b>удалённо / гибрид</span>
+      <span><b>Телефон</b>+996 223 24-05-98</span>
+      <span><b>Email</b>bekish21153@gmail.com</span>
+      <span><b>Telegram</b><a href="https://t.me/bekish2115" target="_blank" rel="noopener">@bekish2115</a></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Профессиональное резюме</h2>
+    <p class="lead">Flutter-разработчик с опытом коммерческой разработки более 3 лет. Проектирую и создаю мобильные и кроссплатформенные приложения с нуля и сопровождаю их на всём жизненном цикле: архитектура, реализация, тестирование, CI/CD, публикация и поддержка в App Store и Google Play.</p>
+    <p>Автор и основной разработчик пяти опубликованных приложений, в том числе сервиса бронирования iZDE с аудиторией более 10 000 установок в Google Play. Помимо iOS и Android, разрабатываю решения для Windows, macOS, Linux, веба и Android TV. Имею опыт сложных интеграций: VoIP-звонки на SIP и WebRTC, системные интерфейсы вызова (CallKit, ConnectionService), real-time на WebSocket, платёжные системы, кассовое оборудование.</p>
+    <p>Сильные стороны: самостоятельность в ведении проекта целиком, внимание к архитектуре и поддерживаемости кода, стабильные и предсказуемые релизы.</p>
+  </section>
+
+  <section>
+    <h2>Ключевые компетенции</h2>
+    <ul class="comp">
+      <li>Архитектура приложений: Clean Architecture, BLoC, модульность</li>
+      <li>Кроссплатформенная разработка: mobile, desktop, web, TV</li>
+      <li>VoIP и медиа: SIP, WebRTC, CallKit, ConnectionService</li>
+      <li>Real-time и офлайн: WebSocket, Centrifugo, Drift (SQLite)</li>
+      <li>Интеграция REST API, платёжных систем и оборудования</li>
+      <li>Дизайн-системы и переиспользуемые UI-компоненты</li>
+      <li>Тестирование, мониторинг стабильности, Crashlytics</li>
+      <li>CI/CD и полный цикл релизов в App Store и Google Play</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Опыт работы</h2>
+
+    <div class="job">
+      <div class="job-head"><h3>Grant System</h3><span class="dates">Сентябрь 2025 — настоящее время</span></div>
+      <p class="pos">Flutter-разработчик</p>
+      <p class="ctx">IT-компания, Бишкек. Разработка мобильных, десктопных и веб-продуктов для собственных проектов и заказчиков.</p>
+
+      <h4>Зона ответственности</h4>
+      <ul class="b">
+        <li>Полный цикл разработки проектов: выбор архитектуры, структура проекта, реализация функционала, тестирование, сборка и публикация.</li>
+        <li>Ведение большинства проектов в роли единственного разработчика, взаимодействие с backend-командой по API-контрактам.</li>
+        <li>Создание общей архитектурной основы и дизайн-систем для семейства связанных приложений.</li>
+        <li>Подготовка релизов, подписание сборок, публикация и обновление приложений в магазинах.</li>
+      </ul>
+
+      <h4>Ключевые проекты</h4>
+      <div class="proj">
+        <div class="proj-head"><strong>BaiHome — видеодомофон (iOS, Android)</strong><span class="links"><a href="https://apps.apple.com/app/id6771266626" target="_blank" rel="noopener">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.intercom.intercom" target="_blank" rel="noopener">Google Play</a></span></div>
+        <p>Разработал приложение целиком. Реализовал видеозвонки на SIP и WebRTC, приём вызовов в фоне и при закрытом приложении через FCM, CallKit и ConnectionService, потоковое видео, deep links. Внедрил мягкие и принудительные обновления через Firebase Remote Config и мониторинг стабильности в Crashlytics.</p>
+      </div>
+      <div class="proj">
+        <div class="proj-head"><strong>Cinema и Cinema Worker — приложения кинотеатра (iOS, Android)</strong><span class="links"><a href="https://play.google.com/store/apps/details?id=kg.bay.cinema_user" target="_blank" rel="noopener">Cinema</a> · <a href="https://play.google.com/store/apps/details?id=kg.bay.cinema_worker" target="_blank" rel="noopener">Cinema Worker</a></span></div>
+        <p>Спроектировал архитектуру и дизайн-систему с нуля для приложения зрителей и приложения сотрудников. Реализовал авторизацию через Google и Apple, push-уведомления, сканирование QR-кодов камерой, безопасное хранение сессии.</p>
+      </div>
+      <div class="proj">
+        <div class="proj-head"><strong>Внутренние проекты (не публикуются)</strong></div>
+        <p>Десктопные приложения для Windows, macOS и Linux с многооконным режимом, печатью документов и сборкой установщиков. Кроссплатформенное приложение с единой кодовой базой для веба, десктопа и Android TV с адаптацией под экраны до 4K. Кассовые решения для Android POS-терминалов и Windows с поддержкой принтеров чеков и сканеров, локализацией на 3 языка и CI/CD в GitLab. Крупное мобильное приложение с двумя ролями пользователей: чат на WebSocket, биометрическая авторизация, безопасная ротация токенов, более 160 файлов тестов.</p>
+      </div>
+
+      <h4>Результаты</h4>
+      <ul class="b">
+        <li>Выпустил в App Store и Google Play три приложения компании.</li>
+        <li>Запустил продукты на шести платформах: iOS, Android, Windows, macOS, веб и Android TV.</li>
+        <li>Сформировал единые архитектурные стандарты и дизайн-систему, которые ускоряют старт новых проектов.</li>
+      </ul>
+      <p class="tech"><b>Технологии:</b> Dart, Flutter, BLoC, Clean Architecture, get_it, injectable, auto_route, Dio, Retrofit, freezed, Firebase, SIP, WebRTC, WebSocket, GitLab CI.</p>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><h3>iZDE</h3><span class="dates">Сентябрь 2023 — настоящее время</span></div>
+      <p class="pos">Flutter-разработчик</p>
+      <p class="ctx">Сервис поиска и бронирования жилья для отдыха в Кыргызстане.</p>
+
+      <h4>Зона ответственности</h4>
+      <ul class="b">
+        <li>Разработка и развитие двух мобильных приложений сервиса: для путешественников и для владельцев объектов.</li>
+        <li>Роль основного разработчика: автор около 90% кода клиентского приложения.</li>
+        <li>Проектирование архитектуры, реализация функционала, интеграция с API, подготовка и публикация релизов.</li>
+      </ul>
+
+      <h4>Ключевые проекты</h4>
+      <div class="proj">
+        <div class="proj-head"><strong>iZDE — приложение для путешественников (iOS, Android)</strong><span class="links"><a href="https://apps.apple.com/app/id6498629576" target="_blank" rel="noopener">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.izde.izdeuserandroid" target="_blank" rel="noopener">Google Play</a></span></div>
+        <p>Карта на Google Maps с векторными тайлами и кластеризацией, real-time обновления через WebSocket (Centrifugo), офлайн-кэш на Drift (SQLite), интеграция платёжных систем, push-уведомления, deep links, авторизация по SMS, через Google и Apple, мультиязычность.</p>
+      </div>
+      <div class="proj">
+        <div class="proj-head"><strong>iZDE Business — приложение для владельцев объектов (iOS, Android)</strong><span class="links"><a href="https://apps.apple.com/app/id6503256802" target="_blank" rel="noopener">App Store</a> · <a href="https://play.google.com/store/apps/details?id=next.link.izde_business_v2" target="_blank" rel="noopener">Google Play</a></span></div>
+        <p>Разработал с нуля: многошаговые формы с загрузкой фото и выбором адреса на карте, календарь, real-time обновления, push-уведомления, просмотр PDF-документов.</p>
+      </div>
+
+      <h4>Результаты</h4>
+      <ul class="b">
+        <li>Приложение iZDE набрало более 10 000 установок в Google Play, iZDE Business — более 1 000.</li>
+        <li>Выпустил более 170 сборок клиентского приложения, текущая версия — 4.2.</li>
+        <li>Настроил три окружения (dev, staging, prod), Firebase Analytics и Crashlytics, автоматическую сборку релизов в GitHub Actions.</li>
+      </ul>
+      <p class="tech"><b>Технологии:</b> Flutter, BLoC, Clean Architecture, Dio, Retrofit, Google Maps, Centrifugo, Drift, Firebase, GitHub Actions.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Опубликованные приложения</h2>
+    <div class="tw"><table>
+      <thead><tr><th>Приложение</th><th>Платформы</th><th>Показатели</th><th>Магазины</th></tr></thead>
+      <tbody>
+        <tr><td>iZDE</td><td>iOS, Android</td><td>10 000+ установок</td><td><a href="https://apps.apple.com/app/id6498629576" target="_blank" rel="noopener">App Store</a>, <a href="https://play.google.com/store/apps/details?id=com.izde.izdeuserandroid" target="_blank" rel="noopener">Google Play</a></td></tr>
+        <tr><td>iZDE Business</td><td>iOS, Android</td><td>1 000+ установок</td><td><a href="https://apps.apple.com/app/id6503256802" target="_blank" rel="noopener">App Store</a>, <a href="https://play.google.com/store/apps/details?id=next.link.izde_business_v2" target="_blank" rel="noopener">Google Play</a></td></tr>
+        <tr><td>BaiHome</td><td>iOS, Android</td><td>версия 1.3</td><td><a href="https://apps.apple.com/app/id6771266626" target="_blank" rel="noopener">App Store</a>, <a href="https://play.google.com/store/apps/details?id=com.intercom.intercom" target="_blank" rel="noopener">Google Play</a></td></tr>
+        <tr><td>Cinema</td><td>iOS, Android</td><td>—</td><td><a href="https://play.google.com/store/apps/details?id=kg.bay.cinema_user" target="_blank" rel="noopener">Google Play</a></td></tr>
+        <tr><td>Cinema Worker</td><td>iOS, Android</td><td>—</td><td><a href="https://play.google.com/store/apps/details?id=kg.bay.cinema_worker" target="_blank" rel="noopener">Google Play</a></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Технические навыки</h2>
+    <div class="tw"><table class="skills"><tbody>
+      <tr><td>Языки и фреймворки</td><td>Dart, Flutter, Kotlin (Android-интеграции)</td></tr>
+      <tr><td>Архитектура и состояние</td><td>Clean Architecture, feature-based структура, BLoC / Cubit, get_it, injectable, auto_route, freezed</td></tr>
+      <tr><td>Сеть и данные</td><td>REST API, Dio, Retrofit, WebSocket, Centrifugo, Drift / SQLite, Secure Storage</td></tr>
+      <tr><td>VoIP и медиа</td><td>SIP, WebRTC, CallKit, ConnectionService, HLS, камера и QR-сканирование</td></tr>
+      <tr><td>Сервисы</td><td>Firebase: Messaging, Analytics, Crashlytics, Remote Config; Google Maps; Google / Apple Sign-In</td></tr>
+      <tr><td>Платформы</td><td>iOS, Android, Windows, macOS, Linux, Web, Android TV</td></tr>
+      <tr><td>Релизы и DevOps</td><td>App Store Connect, Google Play Console, GitHub Actions, GitLab CI, подписание сборок, установщики для Windows</td></tr>
+      <tr><td>Качество</td><td>Unit- и widget-тесты, статический анализ, code review, Git</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Образование</h2>
+      <p><strong>GeekTech</strong>, Бишкек<br>Курс «Flutter-разработка», 2023</p>
+      <p style="color:var(--ink-2)">Дальнейшие навыки получены в коммерческой разработке.</p>
+    </div>
+    <div>
+      <h2>Языки</h2>
+      <div class="kv"><span>Кыргызский</span><span>родной</span></div>
+      <div class="kv"><span>Русский</span><span>C1, продвинутый</span></div>
+      <div class="kv"><span>Английский</span><span>C1, продвинутый</span></div>
+    </div>
+  </section>
+
+  <div class="foot"><span>Бекжан Сайтмаматов · Flutter-разработчик</span><span>Обновлено: октябрь 2026</span></div>
+</article>
+
+<!-- ======================= ENGLISH ======================= -->
+<article class="paper" data-l="en" lang="en" hidden>
+  <header>
+    <h1 class="name">Bekzhan Saitmamatov</h1>
+    <p class="title">Flutter Developer · Mobile &amp; Cross-platform Engineer</p>
+    <div class="contacts">
+      <span><b>Location</b>Bishkek, Kyrgyzstan</span>
+      <span><b>Work</b>remote / hybrid</span>
+      <span><b>Phone</b>+996 223 24-05-98</span>
+      <span><b>Email</b>bekish21153@gmail.com</span>
+      <span><b>Telegram</b><a href="https://t.me/bekish2115" target="_blank" rel="noopener">@bekish2115</a></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p class="lead">Flutter developer with more than 3 years of commercial experience. I design and build mobile and cross-platform applications from scratch and own them across the full lifecycle: architecture, implementation, testing, CI/CD, publishing and support on the App Store and Google Play.</p>
+    <p>Author and lead developer of five published apps, including the iZDE booking service with more than 10,000 installs on Google Play. Beyond iOS and Android, I ship for Windows, macOS, Linux, web and Android TV. Experienced in complex integrations: SIP and WebRTC VoIP calling, native call interfaces (CallKit, ConnectionService), real-time over WebSocket, payment providers and point-of-sale hardware.</p>
+    <p>Strengths: independent end-to-end ownership, a focus on architecture and maintainable code, and stable, predictable releases.</p>
+  </section>
+
+  <section>
+    <h2>Core Competencies</h2>
+    <ul class="comp">
+      <li>App architecture: Clean Architecture, BLoC, modular design</li>
+      <li>Cross-platform delivery: mobile, desktop, web, TV</li>
+      <li>VoIP and media: SIP, WebRTC, CallKit, ConnectionService</li>
+      <li>Real-time and offline: WebSocket, Centrifugo, Drift (SQLite)</li>
+      <li>REST API, payment provider and hardware integration</li>
+      <li>Design systems and reusable UI components</li>
+      <li>Testing, stability monitoring, Crashlytics</li>
+      <li>CI/CD and full release cycle on the App Store and Google Play</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+
+    <div class="job">
+      <div class="job-head"><h3>Grant System</h3><span class="dates">September 2025 — present</span></div>
+      <p class="pos">Flutter Developer</p>
+      <p class="ctx">IT company, Bishkek. Mobile, desktop and web products for in-house projects and clients.</p>
+
+      <h4>Responsibilities</h4>
+      <ul class="b">
+        <li>End-to-end delivery: architecture, project structure, feature development, testing, builds and releases.</li>
+        <li>Sole developer on most projects; aligning API contracts with the backend team.</li>
+        <li>Building a shared architectural foundation and design systems for a family of related apps.</li>
+        <li>Release preparation, build signing, publishing and updates on both stores.</li>
+      </ul>
+
+      <h4>Key Projects</h4>
+      <div class="proj">
+        <div class="proj-head"><strong>BaiHome — video intercom (iOS, Android)</strong><span class="links"><a href="https://apps.apple.com/app/id6771266626" target="_blank" rel="noopener">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.intercom.intercom" target="_blank" rel="noopener">Google Play</a></span></div>
+        <p>Built the app end to end. Implemented SIP and WebRTC video calling, incoming calls in background and killed state via FCM, CallKit and ConnectionService, video streaming and deep links. Introduced soft and forced updates via Firebase Remote Config and stability monitoring with Crashlytics.</p>
+      </div>
+      <div class="proj">
+        <div class="proj-head"><strong>Cinema and Cinema Worker — cinema apps (iOS, Android)</strong><span class="links"><a href="https://play.google.com/store/apps/details?id=kg.bay.cinema_user" target="_blank" rel="noopener">Cinema</a> · <a href="https://play.google.com/store/apps/details?id=kg.bay.cinema_worker" target="_blank" rel="noopener">Cinema Worker</a></span></div>
+        <p>Designed the architecture and design system from scratch for the moviegoer and staff apps. Implemented Google and Apple sign-in, push notifications, camera-based QR scanning and secure session storage.</p>
+      </div>
+      <div class="proj">
+        <div class="proj-head"><strong>Internal projects (not public)</strong></div>
+        <p>Desktop apps for Windows, macOS and Linux with multi-window mode, document printing and installer builds. A single-codebase app for web, desktop and Android TV that adapts to screens up to 4K. Point-of-sale solutions for Android POS terminals and Windows with receipt printers and scanners, 3-language localization and GitLab CI/CD. A large mobile app with two user roles: WebSocket chat, biometric sign-in, secure token rotation and 160+ test files.</p>
+      </div>
+
+      <h4>Results</h4>
+      <ul class="b">
+        <li>Released three company apps on the App Store and Google Play.</li>
+        <li>Shipped products on six platforms: iOS, Android, Windows, macOS, web and Android TV.</li>
+        <li>Established shared architecture standards and a design system that speed up new project starts.</li>
+      </ul>
+      <p class="tech"><b>Technologies:</b> Dart, Flutter, BLoC, Clean Architecture, get_it, injectable, auto_route, Dio, Retrofit, freezed, Firebase, SIP, WebRTC, WebSocket, GitLab CI.</p>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><h3>iZDE</h3><span class="dates">September 2023 — present</span></div>
+      <p class="pos">Flutter Developer</p>
+      <p class="ctx">Holiday accommodation search and booking service in Kyrgyzstan.</p>
+
+      <h4>Responsibilities</h4>
+      <ul class="b">
+        <li>Development of both mobile apps: for travelers and for property owners.</li>
+        <li>Lead developer: author of about 90% of the guest app's code.</li>
+        <li>Architecture, feature development, API integration, release preparation and publishing.</li>
+      </ul>
+
+      <h4>Key Projects</h4>
+      <div class="proj">
+        <div class="proj-head"><strong>iZDE — app for travelers (iOS, Android)</strong><span class="links"><a href="https://apps.apple.com/app/id6498629576" target="_blank" rel="noopener">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.izde.izdeuserandroid" target="_blank" rel="noopener">Google Play</a></span></div>
+        <p>Google Maps with vector tiles and clustering, real-time updates over WebSocket (Centrifugo), offline cache with Drift (SQLite), payment provider integration, push notifications, deep links, SMS / Google / Apple sign-in, multi-language support.</p>
+      </div>
+      <div class="proj">
+        <div class="proj-head"><strong>iZDE Business — app for property owners (iOS, Android)</strong><span class="links"><a href="https://apps.apple.com/app/id6503256802" target="_blank" rel="noopener">App Store</a> · <a href="https://play.google.com/store/apps/details?id=next.link.izde_business_v2" target="_blank" rel="noopener">Google Play</a></span></div>
+        <p>Built from scratch: multi-step forms with photo upload and map-based address selection, calendar, real-time updates, push notifications, in-app PDF viewing.</p>
+      </div>
+
+      <h4>Results</h4>
+      <ul class="b">
+        <li>iZDE reached 10,000+ installs on Google Play; iZDE Business reached 1,000+.</li>
+        <li>Shipped 170+ builds of the guest app; current version 4.2.</li>
+        <li>Set up three environments (dev, staging, prod), Firebase Analytics and Crashlytics, and automated release builds in GitHub Actions.</li>
+      </ul>
+      <p class="tech"><b>Technologies:</b> Flutter, BLoC, Clean Architecture, Dio, Retrofit, Google Maps, Centrifugo, Drift, Firebase, GitHub Actions.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Published Applications</h2>
+    <div class="tw"><table>
+      <thead><tr><th>App</th><th>Platforms</th><th>Metrics</th><th>Stores</th></tr></thead>
+      <tbody>
+        <tr><td>iZDE</td><td>iOS, Android</td><td>10,000+ installs</td><td><a href="https://apps.apple.com/app/id6498629576" target="_blank" rel="noopener">App Store</a>, <a href="https://play.google.com/store/apps/details?id=com.izde.izdeuserandroid" target="_blank" rel="noopener">Google Play</a></td></tr>
+        <tr><td>iZDE Business</td><td>iOS, Android</td><td>1,000+ installs</td><td><a href="https://apps.apple.com/app/id6503256802" target="_blank" rel="noopener">App Store</a>, <a href="https://play.google.com/store/apps/details?id=next.link.izde_business_v2" target="_blank" rel="noopener">Google Play</a></td></tr>
+        <tr><td>BaiHome</td><td>iOS, Android</td><td>version 1.3</td><td><a href="https://apps.apple.com/app/id6771266626" target="_blank" rel="noopener">App Store</a>, <a href="https://play.google.com/store/apps/details?id=com.intercom.intercom" target="_blank" rel="noopener">Google Play</a></td></tr>
+        <tr><td>Cinema</td><td>iOS, Android</td><td>—</td><td><a href="https://play.google.com/store/apps/details?id=kg.bay.cinema_user" target="_blank" rel="noopener">Google Play</a></td></tr>
+        <tr><td>Cinema Worker</td><td>iOS, Android</td><td>—</td><td><a href="https://play.google.com/store/apps/details?id=kg.bay.cinema_worker" target="_blank" rel="noopener">Google Play</a></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="tw"><table class="skills"><tbody>
+      <tr><td>Languages &amp; frameworks</td><td>Dart, Flutter, Kotlin (Android integrations)</td></tr>
+      <tr><td>Architecture &amp; state</td><td>Clean Architecture, feature-based structure, BLoC / Cubit, get_it, injectable, auto_route, freezed</td></tr>
+      <tr><td>Networking &amp; data</td><td>REST API, Dio, Retrofit, WebSocket, Centrifugo, Drift / SQLite, Secure Storage</td></tr>
+      <tr><td>VoIP &amp; media</td><td>SIP, WebRTC, CallKit, ConnectionService, HLS, camera and QR scanning</td></tr>
+      <tr><td>Services</td><td>Firebase: Messaging, Analytics, Crashlytics, Remote Config; Google Maps; Google / Apple Sign-In</td></tr>
+      <tr><td>Platforms</td><td>iOS, Android, Windows, macOS, Linux, Web, Android TV</td></tr>
+      <tr><td>Release &amp; DevOps</td><td>App Store Connect, Google Play Console, GitHub Actions, GitLab CI, build signing, Windows installers</td></tr>
+      <tr><td>Quality</td><td>Unit and widget tests, static analysis, code review, Git</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Education</h2>
+      <p><strong>GeekTech</strong>, Bishkek<br>Flutter Development course, 2023</p>
+      <p style="color:var(--ink-2)">Further skills gained through commercial development.</p>
+    </div>
+    <div>
+      <h2>Languages</h2>
+      <div class="kv"><span>Kyrgyz</span><span>native</span></div>
+      <div class="kv"><span>Russian</span><span>C1, advanced</span></div>
+      <div class="kv"><span>English</span><span>C1, advanced</span></div>
+    </div>
+  </section>
+
+  <div class="foot"><span>Bekzhan Saitmamatov · Flutter Developer</span><span>Updated: October 2026</span></div>
+</article>
+
+<script>
+(function(){
+  function setLang(l){
+    document.documentElement.lang=l;
+    document.querySelectorAll('[data-l]').forEach(function(e){e.hidden=e.getAttribute('data-l')!==l});
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l))});
+  }
+  setLang(location.hash==='#en'?'en':'ru');
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
+})();
+</script>
+</body>
+</html>
